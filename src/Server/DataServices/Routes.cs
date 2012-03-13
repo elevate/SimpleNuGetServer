@@ -5,11 +5,11 @@ using Ninject;
 using NuGet.Server;
 using NuGet.Server.DataServices;
 using NuGet.Server.Infrastructure;
-using RouteMagic;
+using NuGetRoutes = Elevate.NugetServer.DataServices.NuGetRoutes;
 
-[assembly: WebActivator.PreApplicationStartMethod(typeof(S3NugetServer.NuGetRoutes), "Start")]
+[assembly: WebActivator.PreApplicationStartMethod(typeof(NuGetRoutes), "Start")]
 
-namespace S3NugetServer {
+namespace Elevate.NugetServer.DataServices {
     public static class NuGetRoutes {
         public static void Start() {
             MapRoutes(RouteTable.Routes);

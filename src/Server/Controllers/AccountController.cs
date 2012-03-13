@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Routing;
 using System.Web.Security;
-using S3NugetServer.Models;
+using Elevate.NugetServer.Models;
 
-namespace S3NugetServer.Controllers
+namespace Elevate.NugetServer.Controllers
 {
     public class AccountController : Controller
     {
